@@ -1,0 +1,8 @@
+{
+    "Cadastro": {
+        "id": 1,
+        "nome": "Victor",
+        "idade": 19,
+        "sexo": "M"
+    }
+}

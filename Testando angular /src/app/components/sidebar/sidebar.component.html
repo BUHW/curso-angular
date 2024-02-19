@@ -1,0 +1,41 @@
+<header>
+    <section (click)="showCad()">
+        <i class='bx bx-menu'></i>
+    </section>
+    <section>
+        <i class='bx bxl-angular'></i>
+        <span>Curso de Angular</span>
+    </section>
+</header>
+<section class="sidenav" (click)="showCad()" [class.active]="showNav">
+    <section class="logo">
+        <i class='bx bxl-angular'></i>
+    </section>
+
+    <ul>
+        <li>
+            <a [routerLink]="['/']">
+                <i class='bx bxl-angular'></i>
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/dashboard']">
+                <i class='bx bxl-angular'></i>
+                <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/cadastro']">
+                <i class='bx bxl-angular'></i>
+                <span>Cadastro</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/lista']">
+                <i class='bx bxl-angular'></i>
+                <span>Lista</span>
+            </a>
+        </li>
+    </ul>
+</section>

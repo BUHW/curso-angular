@@ -1,0 +1,87 @@
+header{
+    width: 100%;
+    display: flex;
+    background-color: var(--blue);
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section{
+    display: flex;
+    align-items: center;
+}
+
+header section i{
+    font-size: 30px;
+    color: var(--lightBlue);
+    cursor: pointer;
+}
+
+header section span{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--lightBlue);
+}
+
+header section:last-child i{
+    margin-right: 5px;
+}
+
+.sidenav{
+    width: 280px;
+    background-color: var(--blue);
+    position: absolute;
+    min-height: calc(90vh - 1.5rem);
+    padding: 0 30px;
+    left: -100%;
+    transition: all .5s;
+}
+
+.sidenav.active{
+    left: 0;
+    z-index: 10;
+}
+
+.sidenav .logo{
+    display: flex;
+    margin: 2rem 0 4rem 0;
+    width: 100%;
+    align-items: center;
+}
+
+.sidenav .logo i{
+    font-size: 50px;
+    color: var(--lightBlue);
+}
+
+.sidenav ul{
+    width: 100%;
+}
+
+.sidenav ul li{
+    list-style: none;
+    margin: 2rem 0;
+}
+
+.sidenav ul li a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: all .4s ease;
+}
+
+.sidenav ul li a i{
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.sidenav ul li a:hover{
+    border-bottom: 2px solid var(--lightBlue);
+    color: var(--lightBlue);
+}

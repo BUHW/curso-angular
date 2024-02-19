@@ -1,0 +1,84 @@
+header{
+    background-color: white;
+    display: flex;
+    padding: 0 2rem;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .content-header{
+    display: flex;
+    align-items: center;
+}
+
+header .content-header h1{
+    color: var(--thirdColor);
+    margin-right: 1rem;
+}
+
+header .content-menu{
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    color: var(--thirdColor);
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    top: calc(0px + 60px);
+    right: -250px;
+    bottom: 0;
+    width: 250px;
+    background-color: var(--SecColor);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    transition: right .4s ease-in-out;
+}
+
+.sidebar.active{
+    right: 0;
+}
+
+.sidebar section{
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sidebar section img{
+    width: auto;
+    height: 3rem;
+}
+
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li{
+    list-style: none;
+    display: flex;
+}
+
+.sidebar ul li a{
+    color: var(--thirdColor);
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-bottom: 2px solid transparent;
+    margin: 1.2rem 1.2rem;
+    transition: .4s ease;
+}
+
+.sidebar ul li a span{
+    margin-left: 10px;
+}
+
+.sidebar ul li a:hover{
+    border-bottom: 2px solid var(--FirstColor);
+}

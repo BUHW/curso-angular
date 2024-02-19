@@ -1,0 +1,36 @@
+<header>
+    <section class="content-header">
+        <h1>BeautySync</h1>
+        <img src="../../../assets/img/logo.png" alt="logo">
+    </section>
+    <section class="content-menu" (click)="showCad()">
+        <i class='bx bx-menu'></i>
+    </section>
+</header>
+
+<section class="sidebar" (click)="showCad()" [class.active]="showNav">
+    <section>
+        <img src="../../../assets/img/logo-menu.png" alt="logo">
+    </section>
+
+    <ul>
+        <li>
+            <a [routerLink]="['/']">
+                <i class='bx bx-home'></i>
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/agendamento']">
+                <i class='bx bx-calendar'></i>
+                <span>Agendamento</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="['/trabalho']">
+                <i class='bx bx-briefcase'></i>
+                <span>Trabalho</span>
+            </a>
+        </li>
+    </ul>
+</section>

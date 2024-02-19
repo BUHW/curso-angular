@@ -1,0 +1,75 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container span{
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--thirdColor);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container form{
+    margin-top: 1rem;
+}
+
+.container form section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container form section label{
+    color: var(--thirdColor);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: .6rem;
+}
+
+.container form section:first-child input{
+    border: none;
+    border: 1px solid var(--FirstColor);
+    padding: 10px 15px;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    outline-color: var(--thirdColor);
+}
+
+input[type="file"]{
+    display: none;
+}
+
+.upload{
+    background-color: var(--thirdColor);
+    padding: .8rem;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload span{
+    color: var(--SecColor);
+}
+
+.container form button{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: 1rem 3rem;
+    border: none;
+    background-color: var(--thirdColor);
+    color: var(--SecColor);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.container form button:hover{
+    background-color: var(--FirstColor);
+}

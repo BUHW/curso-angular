@@ -1,0 +1,84 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.container .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.container .title span{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--blue);
+}
+
+.container .title i{
+    margin-right: 10px;
+    font-size: 60px;
+    color: var(--blue);
+}
+
+.container .input-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+}
+
+.container .input-group section{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.container .input-group section label{
+    color: var(--blue);
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.container .input-group section input{
+    padding: 15px 50px;
+    border-radius: 5px;
+    border: none;
+    border: 2px solid var(--blue);
+    outline-color: var(--blue);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.container .input-group button{
+    background-color: var(--blue);
+    border: none;
+    padding: 1rem 3rem;
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.container .input-group button:hover{
+    background-color: var(--lightBlue);
+    color: var(--blue);
+}
+
+

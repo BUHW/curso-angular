@@ -1,0 +1,30 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.container .title{
+    background-color: var(--blue);
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.container .title i{
+    font-size: 30px;
+    color: var(--lightBlue);
+    margin-right: 0.5rem;
+}
+
+.container .title span{
+    width: 100%;
+    color: var(--lightBlue);
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid var(--lightBlue);
+}

@@ -1,0 +1,31 @@
+header{
+    width: 100%;
+    display: flex;
+    background-color: var(--blue);
+    padding: 1.5rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header section{
+    display: flex;
+    align-items: center;
+}
+
+header section i{
+    font-size: 30px;
+    color: var(--lightBlue);
+    cursor: pointer;
+}
+
+header section span{
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--lightBlue);
+}
+
+header section:last-child i{
+    margin-right: 5px;
+}
+
+

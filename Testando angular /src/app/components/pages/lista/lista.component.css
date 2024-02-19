@@ -1,0 +1,38 @@
+.container {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+}
+
+.container span{
+    color: var(--blue);
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.container td,
+.container th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.container tr:nth-child(even) {
+    background-color: var(--blue);
+}
+
+.container tr:hover {
+    background-color: #ddd;
+}
+
+.container th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--blue);
+    color: white;
+}
